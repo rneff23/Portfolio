@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.profile-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.bio h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+img {
+    overflow: clip;
+}
+.bio p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+}
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #007b00;
+    margin-bottom: 3rem;
+}
+.about-content {
+    display: grid
+;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+.banner {
+    background: url("images/possibleheaderreal.png") center / cover no-repeat;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 100px 20px;
+}
+.resume-btn {
+    display: inline-block;
+    background: #007b00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    margin-top: 1rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.Signup-sheet {
+    text-align: center;
+    padding: 37px 20px;
+    background: white
+
+}
+
+.Signup-sheet button {
+    background: #5184f1;
+    color: white;
+    padding: 1px 9px;
+    border: none;
+    cursor: pointer;
+    font-size: .9em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    gap: 2rem;
+}
+.logo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #e23b08;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+
+
+
+
+.about-me {
+    padding: 40px 20px;
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    overflow:hidden
+}

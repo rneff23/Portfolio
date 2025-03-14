@@ -1,0 +1,197 @@
+/* Sticky Menu Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #e23b08;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Resume Page Specific Styles */
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+    color: #15225c;
+
+    margin-bottom: 1rem;
+}
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    border: none;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.5rem;
+}
+
+section h3 {
+    color: #444;
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+}
+
+section p, section li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    line-height: 2;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin: 0 5px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.contact-link[href^="https://linkedin"] {
+    color: #15225c;
+}
+
+.contact-link[href^="mailto"] {
+    color: #15225c;
+    
+}
+
+.contact-link[href^="tel"] {
+    color: #15225c;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: whitesmoke;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #90EE90;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robert's travel Blog</title>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!--Navbar at top-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Travel</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="About-me.html">Me</a>
+            <a href="#Latest-Travel">Latest Travel</a>
+            <a href="#Past-Travels">Past-travels</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+    <!--Top banner explaining who I am-->
+    <header class="banner">
+
+        <h1>Robert's Travel Blog</h1>
+        <p>Follow me as I travel all around the world and see new things</p>
+    </header>
+
+    
+    <!--Sign Up sheet-->
+    <section class="Signup-sheet">
+    <h2>Newsletter</h2>
+    <p>If you want to be notified about my travels, click down below!</p>
+    <button onclick="document.getElementById('signup-form').style.display='block'">Sign up</button>
+    <div id="signup-form" class="form-popup" style="display: none;">
+        <form class="form-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required=""> 
+            
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+        </form>
+    </div>
+    </section>
+    <!--Latest Travel-->
+<section id="Latest-Travel" class="Latest-Travel">
+    <h2>Latest Travel</h2>
+    <div class="latest-travel-grid"> 
+        <article class="latest-travel-posts">
+            <img src="images/latesttravels1.jpg.jpg" alt="Eifel-Tower"> 
+            <div class="latest-content-info">
+                <h3>Brother and I at the Eifel Tower</h3>
+                <p>After walking in the hot sun for what felt like hours, my family and I stopped at a bridge near the Eifel Tower, and this photo was taken</p>
+            </div>
+    
+    </article>
+    <article class="latest-travel-posts">
+        <img src="images/montedeactual.JPG" alt="MontReal">
+        <div class="latest-content-info">
+            
+            <h3>My Dad and I posing with Monte De Michelle</h3>
+            <p>While visiting Normandy, my family decided to visit Monte De Michelle. After walking a very long way towards it, we stopped on the foot bridge and my dad and I got this photo taken</p>
+            </div>
+        
+</article>
+</div>
+</section>
+<!--Video-->
+<section class="video">
+    <h2>Experience the Adventure</h2>
+    <video controls>
+        <source src="images\video.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!--Travels from the Past-->
+<section id="Past-Travels" section class="past-travels">
+    <h2>Travels From the Past</h2>
+    <div class="project-travels">
+        <img src="images/Shabuya.JPG" alt="Shabuya Crossing">
+        <img src="images/hawaii.jpg" alt="View from Hawaii Hotel Room">
+        <img src="images/IMG_0493.JPG" alt="With Friends in Tahoe">
+    </div>
+</section>
+            
+<!--About me Section-->
+<section class="about-me">
+    <h2>About Me</h2>
+            <div class="latest-content-info">
+            <p>Hi, my name is Robert Neff, im 19 years old, and over my lifetime, I have traveled to many places. As a result, I wanted to put pictures, and some stories with those pictures on my website, so you can follow my enjoyment of traveling</p>
+            </div>
+        </section>
+        <!--Footer-->
+<footer>
+    <p>© 2025 Robert Neff | All Rights Reserved | images taken by Robert Neff</p>
+</footer>
+</body>
+</html>

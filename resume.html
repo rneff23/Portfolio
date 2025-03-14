@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Neff - Resume - Latest Travel</title>
+    <link rel="stylesheet" href="styles/resume-styles.css">
+</head>
+<body>
+   <!--Navbar at top-->
+   <nav class="navbar">
+    <a href="index.html" class="logo">Travel</a>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="About-me.html">Me</a>
+        <a href="index.html#Latest-Travel">Latest Travel</a>
+        <a href="index.html#Past-Travels">Past-travels</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+    <!-- Resume Content -->
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1>Robert Neff</h1>
+            <p class="contact-info">
+                <a href="mailto:rsneff23@icloud.com" class="contact-link">
+                    <img src="images/icloud.png" alt="Email" class="contact-icon">
+                    rsneff23@icloud.com
+                </a> | 
+                <a href="tel:1234567890" class="contact-link">
+                    <img src="images/phone.png" alt="Phone" class="contact-icon">
+                    925-997-XXXX
+                </a> | 
+                <a href="https://linkedin.com" target="_blank" class="contact-link">
+                    <img src="images/IMG_7850real.png" alt="LinkedIn Profile" class="contact-icon">
+                    LinkedIn
+                </a>
+            </p>
+            <p class="contact-info">GitHub: github.com/rsneff23</p>
+        </div>
+        
+        <div class="resume-content">
+            <section>
+                <h2>Objective</h2>
+                <p>College softmore student studying for a business major at University of Oregon, Eugene.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <h3>Bachelor in Business Administration</h3>
+                <p>University of Oregon | Expecting to graduate 2027</p>
+                <ul>
+                    <li>Relevant Courses: Spreadsheet analysis, Micro and Macroeconomics, Accounting, and Business Calculus</li>
+                    <li>GPA: 3.8</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Proficiency in navigating and building computers</li>
+                    <li>Proficiency in spreadsheet and using commands </li>
+                    <li>Social proficiency, problem solving, and communication </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <h3>Building Computer and Installing all software and Hardware</h3>
+                <p>Bought and assembled a powerful PC using pc parts bought from Amazon and Best Buy</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <h3>Spirit Halloween</h3>
+                <p>Sales Associate | August-October 2024</p>
+                <ul>
+                    <li>I helped set up the entire store, from unloading boxes, to shelving products</li>
+                    <li>Once the store opened, I worked there for about a month, working the cash register, helping customers, and hanging up items</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Extracurricular Activites</h2>
+                <ul>
+                    <li>Consistent Gymgoer, about a year</li>
+                    <li>Guitar Player, for a few years</li>
+                    <li>Hiker, and very big on the outdoors</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Robert Neff | All Rights Reserved | images taken by Robert Neff</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
